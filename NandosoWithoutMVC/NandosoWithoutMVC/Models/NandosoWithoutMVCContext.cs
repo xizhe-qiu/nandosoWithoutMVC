@@ -5,8 +5,10 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity.Migrations;
 
+
 namespace NandosoWithoutMVC.Models
 {
+    [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
     public class NandosoWithoutMVCContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
