@@ -2,16 +2,28 @@
 <html>
 <head>
     <title>create special</title>
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="Scripts/SpecialModule.js"></script>
+    <script src="Scripts/createSpecial.js"></script>
 	<meta charset="utf-8" />
 </head>
 <body>
     <form role="form" name="create">
-            <label for="dishInput">Last name:</label>
-            <input type="text" id="dishInput" required />
-            <label for="priceInput">First name:</label>
-            <input type="text" id="priceInput" required />
-            <button type="submit" class="btn btn-default">Submit</button>
+        <div class="form-group">
+            <label for="dishInput">Dish name:</label>
+            <input type="text" class="form-control" id="dishInput" required />
+        </div>
+        <div class="form-group">
+            <label for="priceInput">Price:</label>
+            <input type="text" class="form-control" id="priceInput" required />
+        </div>
+        <div class="btn-toolbar">
+            <button type="submit" class="btn btn-default" id="btncreate">Submit</button>
             <button type="button" class="btn btn-default" id="btncancel">Cancel</button>
-    </form>
+        </div>
+</form>
 </body>
 </html>
