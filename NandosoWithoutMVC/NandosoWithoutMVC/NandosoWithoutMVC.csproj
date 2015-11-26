@@ -160,6 +160,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="createEmployee.html" />
     <Content Include="createFeedback.html" />
+    <Content Include="createReply.html" />
     <Content Include="createSpecial.html" />
     <Content Include="deleteSpecial.html" />
     <Content Include="Employee.html" />
@@ -183,6 +184,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\createEmployee.js" />
     <Content Include="Scripts\createFeedback.js" />
+    <Content Include="Scripts\createReply.js" />
     <Content Include="Scripts\createSpecial.js" />
     <Content Include="Scripts\Employee.js" />
     <Content Include="Scripts\EmployeeModule.js" />
@@ -196,6 +198,8 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Reply.js" />
+    <Content Include="Scripts\ReplyModule.js" />
     <Content Include="Scripts\Special.js" />
     <Content Include="Scripts\SpecialModule.js" />
     <Content Include="Special.html" />
