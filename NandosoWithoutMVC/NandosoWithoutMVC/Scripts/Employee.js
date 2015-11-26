@@ -14,6 +14,9 @@ function setupEmployeesTable(EmployeeList) {
     for (i = 0; i < EmployeeList.length; i++) {
         //create a row
         var row = document.createElement("tr");
+        var EmployeeIDCol = document.createElement("td");
+        EmployeeIDCol.innerHTML = EmployeeList[i].ID;
+        row.appendChild(EmployeeIDCol);
         //create columns
         var EmployeeFirstNameCol = document.createElement("td");
         //fill in data

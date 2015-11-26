@@ -14,6 +14,9 @@ function setupFeedbacksTable(FeedbackList) {
     for (i = 0; i < FeedbackList.length; i++) {
         //create a row
         var row = document.createElement("tr");
+        var CustomerIDCol = document.createElement("td");
+        CustomerIDCol.innerHTML = FeedbackList[i].ID;
+        row.appendChild(CustomerIDCol);
         //create columns
         var CustomerFirstNameCol = document.createElement("td");
         //fill in data
