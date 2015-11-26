@@ -3,6 +3,15 @@
     loadSpecials();
 });
 
+//document.getElementById("createSpecial").onclick = function () {
+//    createSpecial();
+//}
+
+//function createSpecial() {
+//    var item = {Dish : document.getElementById("dishInput").value,Price : document.getElementById("priceInput")};
+//    specialModule.createSpecial(item);
+//}
+
 function loadSpecials() {
     SpecialModule.getSpecials(setupSpecialsTable);
 }
