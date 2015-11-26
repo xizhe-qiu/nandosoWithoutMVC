@@ -3,10 +3,26 @@
     loadSpecials();
 });
 
+document.getElementById("specialSubmit").onclick = function () {
+    var item = [{ "Dish": document.getElementById("DishInput").value, "Price": document.getElementById("PriceInput")}];
+    SpecialModule.addSpecial(item);
+}
+
 function loadSpecials() {
     SpecialModule.getSpecials(setupSpecialsTable);
 }
 
+function addSpecialToTable(Dish, Price) {
+    var specialTable = document.getElementById("specialList");
+    var row = document.createElement("tr");
+    var dishCol = document.createElement("td");
+    dishCol.innerHTML = Dish;
+    row.appendChild(dishCol);
+    var priceCol = document.createElement("td");
+    priceCol.innerHTML = Price;
+    row.appendChild(priceCol);
+    specialTable.appendChild(row);
+}
 function setupSpecialsTable(specialList) {
     var specialTable = document.getElementById("specialList");
     console.log(specialList);
