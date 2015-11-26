@@ -22,23 +22,34 @@
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-
+    <link href="Content/tableStyle.css" rel="stylesheet"/>
     <script src="Scripts/SpecialModule.js"></script>
     <script src="Scripts/Special.js"></script>
 
 	<meta charset="utf-8" />
 </head>
 <body>
-    <!--create striped table with style:"spaced-table"-->
-    <table class="table table-striped spaced-table">
-        <thead>
-            <tr>
-                <th>Dish</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody id="specialList"></tbody>
-    </table>
-    <a href="createSpecial.html">Create new special</a>
+    <div class="white_box">
+        <h1>Special of the day</h1>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="Special.html">Special</a>
+            <a href="Feedback.html">Feedback</a>
+            <a href="Reply.html">Reply</a>
+            <a href="Employee.html">Employee</a>
+            <a href="chatRoom.html">Live chat</a>
+        </div>
+        <!--create striped table with style:"spaced-table"-->
+        <table class="table table-striped spaced-table" id="table">
+            <thead>
+                <tr>
+                    <th>Dish</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="specialList"></tbody>
+        </table>
+        <a href="createSpecial.html" class="sub-link">Create new Special</a>
+    </div>
 </body>
 </html>

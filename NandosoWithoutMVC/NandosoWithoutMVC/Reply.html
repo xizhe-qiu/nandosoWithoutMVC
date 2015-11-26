@@ -22,23 +22,34 @@
     <script src="Scripts/jquery-1.10.2.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
-
+    <link href="Content/tableStyle.css" rel="stylesheet" />
     <script src="Scripts/ReplyModule.js"></script>
     <script src="Scripts/Reply.js"></script>
 
     <meta charset="utf-8" />
 </head>
 <body>
-    <table class="table table-striped spaced-table">
-        <thead>
-            <tr>
-                <th>FeedbackID</th>
-                <th>EmployeeID</th>
-                <th>Content</th>
-            </tr>
-        </thead>
-        <tbody id="replyList"></tbody>
-    </table>
-    <a href="createReply.html">Post new reply</a>
+    <div class="white_box">
+        <h1>Replies from our staff members</h1>
+        <div id="links">
+            <a href="index.html">Home</a>
+            <a href="Special.html">Special</a>
+            <a href="Feedback.html">Feedback</a>
+            <a href="Reply.html">Reply</a>
+            <a href="Employee.html">Employee</a>
+            <a href="chatRoom.html">Live chat</a>
+        </div>
+        <table class="table table-striped spaced-table">
+            <thead>
+                <tr>
+                    <th>FeedbackID</th>
+                    <th>EmployeeID</th>
+                    <th>Content</th>
+                </tr>
+            </thead>
+            <tbody id="replyList"></tbody>
+        </table>
+        <a href="createReply.html">Post new reply</a>
+    </div>
 </body>
 </html>
